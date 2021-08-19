@@ -1,0 +1,127 @@
+ <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('/') ?>">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <!--<sup>2</sup> elemento para colocar o número acima -->
+                <div class="sidebar-brand-text mx-3"> O. Serviço </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+<!--            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('/') ?>">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span> Painel de controle </span></a>
+            </li>-->
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading" >
+                <span class="rotulos">  Módulos </span> 
+            </div>
+            
+               <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                     <i class="fas fa-shopping-cart"></i> <span> Vendas </span>
+                </a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header"> Escolha um opção :</h6>
+                        <a title="Gerenciar ordem de serviços" class="collapse-item" href="<?= base_url('os') ?>"> <i class="fas fa-shopping-basket text-gray-900"></i> &nbsp; Ordem de serviços </a>
+                        <a title="Gerenciar vendas" class="collapse-item" href="<?= base_url('vendas') ?>"> <i class="fas fa-shopping-cart text-gray-900"></i> &nbsp; Vendas </a>
+                    </div>
+                </div>    
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                     <i class="fas fa-database"></i> <span> Cadastros </span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header"> Escolha um opção :</h6>
+                        <a title="Gerenciar clientes" class="collapse-item" href="<?= base_url('clientes') ?>"> <i class="fas fa-user-tie text-gray-900"></i> &nbsp; Clientes </a>
+                        <a title="Gerenciar fornecedores" class="collapse-item" href="<?= base_url('fornecedores') ?>"> <i class="fas fa-user-tag"></i> &nbsp; Fornecedores </a>
+                        <a title="Gerenciar vendedores" class="collapse-item" href="<?= base_url('vendedores') ?>"> <i class="fas fa-user-plus"></i> &nbsp; Vendedores </a>
+                        <a title="Gerenciar serviços" class="collapse-item" href="<?= base_url('servicos') ?>"> <i class="fas fa-tools"></i> &nbsp; Serviços </a>
+                </div>
+            </li>
+
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="true" aria-controls="collapseThree">
+                     <i class="fas fa-box-open"></i> <span> Estoque </span>
+                </a>
+          
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header"> Escolha um opção :</h6>
+                        <a title="Gerenciar marcas" class="collapse-item" href="<?= base_url('marcas') ?>"> <i class="fas fa-copyright"></i> &nbsp; Marcas </a>
+                        <a title="Gerenciar categorias" class="collapse-item" href="<?= base_url('categorias') ?>"> <i class="fas fa-layer-group"></i> &nbsp; Categorias </a>
+                        <a title="Gerenciar produtos" class="collapse-item" href="<?= base_url('produtos') ?>"> <i class="fas fa-tablet"></i> &nbsp; Produtos </a>
+                    </div>
+                </div>
+            </li>
+            
+
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="true" aria-controls="collapseFour">
+                     <i class="fas fa-money-bill"></i> <span> Financeiro </span>
+                </a>
+          
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header"> Escolha um opção :</h6>
+                        <a title="Gerenciar contas a pagar" class="collapse-item" href="<?= base_url('pagar') ?>"> <i class="fas fa-money-bill-alt"></i> &nbsp; Contas a pagar </a>
+                        <a title="Gerenciar contas a receber" class="collapse-item" href="<?= base_url('receber') ?>"> <i class="fas fa-money-bill-wave"></i> &nbsp; Contas a receber </a>
+                        <a title="Gerenciar formas de pagamentos" class="collapse-item" href="<?= base_url('pagamento') ?>"> <i class="fas fa-money-check-alt"></i> &nbsp; F. pagamentos </a>
+                    </div>
+                </div>
+            </li>
+            
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                <span class="rotulos"> Configurações </span>
+            </div>
+
+            <!-- Nav Item -->
+            <li class="nav-item">
+                <a title="Gerenciar usuários" class="nav-link" href="<?= base_url('usuarios')?>">
+                    <i class="fas fa-users"></i>
+                    <span> Usuários </span></a>
+            </li>
+         
+            <li class="nav-item">
+                <a title="Gerenciar dados do sistema" class="nav-link" href="<?= base_url('sistema')?>">
+                    <i class="fas fa-cogs"></i>
+                    <span> Sistema </span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+        
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
